@@ -27,7 +27,7 @@
   border: solid 1px transparent;
   border-radius: 50%;
   background-color: orange;
-  animation: ball 0.5s;
+  animation: ball 0.4s;
   animation-duration: reverse;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
@@ -40,11 +40,10 @@
   border: solid 1px transparent;
   border-radius: 80%;
   background-color: rgba(128, 128, 128, 0.527);
-  animation: shadow 1s;
+  animation: shadow 0.8s;
   animation-duration: reverse;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  animation-direction: alternate;
 }
 
 @keyframes ball {
@@ -61,10 +60,10 @@
 
   95% {
     transform: rotatey(40deg);
-  }
+  }*/
   98% {
     transform: rotatey(50deg);
-  } */
+  }
 
   100% {
     transform: translatey(300px);
@@ -74,16 +73,24 @@
 
 @keyframes shadow {
   0% {
-    transform: rotatey(10deg);
-    opacity: 0;
+    transform: rotatey(0deg);
+    opacity: 1;
   }
-  /* 90% {
-    transform: rotatey(50deg);
+
+  25% {
+    transform: rotatey(0deg);
+    opacity: 1;
+  }
+  50% {
     opacity: 0.5;
-  } */
+  }
+  75% {
+    transform: rotatey(90deg);
+    opacity: 0.5;
+  }
 
   100% {
-    transform: rotatey(180deg);
-    opacity: 1;
+    transform: rotatey(90deg);
+    opacity: 0;
   }
 }
