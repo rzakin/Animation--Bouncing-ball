@@ -31,6 +31,7 @@
   animation-duration: reverse;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
+  animation-direction: alternate;
 }
 
 .shadow {
@@ -58,7 +59,7 @@
   }
 
   95% {
-    transform: rotatey(30deg);
+    transform: rotatey(40deg);
   }
 
   100% {
